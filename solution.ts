@@ -76,16 +76,18 @@ const getUniqueValues = (arr1: UniqueArray, arr2: UniqueArray): UniqueArray => {
   const uniqueArrLookUp: Record<string, boolean> = {};
   const filteredArr: UniqueArray = [];
 
-  arr1.forEach((element) => {
+  for (let i = 0; i < arr1.length; i++) {
+    const element = arr1[i];
     firstArrLookUp[element] = true;
-  });
+  }
 
-  arr2.forEach((element) => {
+  for (let i = 0; i < arr2.length; i++) {
+    const element = arr2[i];
     if (firstArrLookUp[element] && !uniqueArrLookUp[element]) {
       uniqueArrLookUp[element] = true;
       filteredArr.push(element);
     }
-  });
+  }
 
   return filteredArr;
 };
