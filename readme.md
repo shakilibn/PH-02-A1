@@ -7,3 +7,4 @@ Ans: Interface এবং Type দুটোই স্ট্রাকচার ড
     ঙ. Type দিয়ে Complex operations করা যায়, যেমন - Union, Intersection, Mapped types, Conditional Types। কিন্তু interface এইগুলি পারে না।
 
 ২। What is the use of the keyof keyword in TypeScript? Provide an example.
+Ans: keyof কোনো interface বা type-এর নাম দিলে, তার property নামগুলো কে string literal union আকারে রিটার্ন করে।
