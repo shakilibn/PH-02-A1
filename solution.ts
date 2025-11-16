@@ -104,7 +104,7 @@ const calculateTotalPrice = (products: Product[]): number => {
     const originalPrice = cur.price * cur.quantity;
     const discount = (originalPrice / 100) * (cur.discount || 0);
     const discountedPrice = originalPrice - discount;
-    acc += discountedPrice;
+    acc += originalPrice;
     return acc;
   }, 0);
 
