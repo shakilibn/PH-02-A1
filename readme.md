@@ -5,3 +5,5 @@ Ans: Interface এবং Type দুটোই স্ট্রাকচার ড
     গ. Interface "Declaration mergin support" করে, অর্থাৎ একই নামে একাধিকবার interface লিখলে তা মার্জ হয়ে যায়।
     ঘ. interface class implementation করার জন্য ideal। Type দিয়েও technically করা যায়, কিন্তু interface বেশি ন্যাচারাল।
     ঙ. Type দিয়ে Complex operations করা যায়, যেমন - Union, Intersection, Mapped types, Conditional Types। কিন্তু interface এইগুলি পারে না।
+
+২। What is the use of the keyof keyword in TypeScript? Provide an example.
