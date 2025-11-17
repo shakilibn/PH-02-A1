@@ -85,7 +85,7 @@ const getUniqueValues = (arr1: UniqueArray, arr2: UniqueArray): UniqueArray => {
     const element = arr2[i];
     if (firstArrLookUp[element] && !uniqueArrLookUp[element]) {
       uniqueArrLookUp[element] = true;
-      filteredArr.push(element);
+      filteredArr[filteredArr.length] = element;
     }
   }
 
@@ -104,7 +104,7 @@ const calculateTotalPrice = (products: Product[]): number => {
     const originalPrice = cur.price * cur.quantity;
     const discount = (originalPrice / 100) * (cur.discount || 0);
     const discountedPrice = originalPrice - discount;
-    acc += originalPrice;
+    acc += discountedPrice;
     return acc;
   }, 0);
 
